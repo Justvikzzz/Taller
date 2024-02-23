@@ -1,29 +1,24 @@
-//! SE NECESITA SOLUCIONAR
-
 let tell = prompt("Que te gustaria hacer? (*,/,+,-)");
-let dig1 = prompt("Ingrese el primer numero");
-let dig2 = prompt("Ingrese el segundo numero")
+let dig1 = prompt("Introduzca el primer numero");
+let dig2 = prompt("Introduzca el segundo numero")
 
-function calculate(a,b) {
-    // check the value of the `tell` is one of these cases and return the result.
-     switch (tell) {
+function calculate(number1,number2) {
+    switch (tell) {
         case "*":
-            return a * b;
-            
-            
+            return number1 * number2;
         case "/":
-            return a / b;
-            case "+":
-            return a + b;
+            return number1 / number2;
+        case "+":
+            return number1 + number2;
         case "-":
-            return a - b;
-            
+            return number1 - number2;
         default:
-            return "You didn't a correct opertor"
-            
-
+            return "No escogió una operacion valida"
     }
 }
+
+alert(calculate(+dig1, +dig2))
+
 let keepGoing = true;
 
 while (keepGoing) {
@@ -46,18 +41,18 @@ function calculate(a,b) {
     // check the value of the `tell` is one of these cases and return the result.
     switch (tell) {
         case "*":
-            return a * b;
+            return number1 * number2;
            
            
         case "/":
-            return a / b;
+            return number1 / number2;
             case "+":
-            return a + b;
+            return number1 + number2;
         case "-":
-            return a - b;
+            return number1 - number2;
            
         default:
-            return "You didn't a correct opertor"
+            return "No escogió una operacion valida"
            
 
     }
